@@ -24,7 +24,6 @@ public class Area {
                 return;
             }
         }
-
         input.close();
         System.out.println("The area of the circle is: " + Circle.getArea(radius));
     }
