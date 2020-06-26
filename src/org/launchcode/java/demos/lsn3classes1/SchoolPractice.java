@@ -37,8 +37,5 @@ public class SchoolPractice {
         System.out.println("Course Subject: " + mathClass.getSubject());
         System.out.println("Class List: " + mathClass.getClassList());
 
-
-
-
     }
 }
