@@ -1,23 +1,23 @@
 package org.launchcode.java.demos.lsn3classes1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class  Course {
-    private String teacherName;
+    private Teacher teacherName;
     private String subject;
-    private List<String> classList;
+    private List<String> classList = new ArrayList<String>();
 
-    public Course(String teacherName, String subject, List<String> classList) {
+    public Course(Teacher teacherName, String subject) {
         this.teacherName = teacherName;
         this.subject = subject;
-        this.classList = classList;
     }
 
-    public String getTeacherName() {
+    public Teacher getTeacherName() {
         return teacherName;
     }
 
-    public void setTeacherName(String aTeacherName) {
+    public void setTeacherName(Teacher aTeacherName) {
         this.teacherName = aTeacherName;
     }
 
@@ -33,7 +33,7 @@ public class  Course {
         return classList;
     }
 
-    public void setClassList(List<String> aClassList) {
-        this.classList = aClassList;
+    public void setClassList(String student) {
+        classList.add(student);
     }
 }

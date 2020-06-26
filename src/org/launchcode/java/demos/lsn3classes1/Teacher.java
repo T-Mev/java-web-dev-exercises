@@ -2,32 +2,22 @@ package org.launchcode.java.demos.lsn3classes1;
 
 public class Teacher {
 
-    private String firstName;
-    private String lastName;
+    private String name;
     private String subject;
     private int yearsTeaching;
 
-    public Teacher(String firstName, String lastName, String subject, int yearsTeaching) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Teacher(String name, String subject, int yearsTeaching) {
+        this.name = name;
         this.subject = subject;
         this.yearsTeaching = yearsTeaching;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    private void setFirstName(String aFirstName) {
-        this.firstName = aFirstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    private void setLastName(String aLastName) {
-        this.lastName = aLastName;
+    private void setName(String aName) {
+        this.name = aName;
     }
 
     public String getSubject() {
