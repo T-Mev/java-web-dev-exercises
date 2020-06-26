@@ -10,13 +10,18 @@ public class SchoolPractice {
         studentTed.setGpa(4.0);
 
         Student studentBob = new Student("Bob", 123456);
-        studentTed.setNumberOfCredits(3);
-        studentTed.setGpa(3.0);
+        studentBob.setNumberOfCredits(3);
+        studentBob.setGpa(3.0);
 
         System.out.println("\nStudent Name: " + studentTed.getName());
         System.out.println("Student ID: " + studentTed.getStudentId());
         System.out.println("Number of credits: " + studentTed.getNumberOfCredits());
         System.out.println("GPA: " + studentTed.getGpa());
+
+        System.out.println("\nStudent Name: " + studentBob.getName());
+        System.out.println("Student ID: " + studentBob.getStudentId());
+        System.out.println("Number of credits: " + studentBob.getNumberOfCredits());
+        System.out.println("GPA: " + studentBob.getGpa());
 
         Teacher newTeacher = new Teacher("Mr. Teacher", "Math", 7);
 
@@ -24,11 +29,11 @@ public class SchoolPractice {
         System.out.println("Teaching Subject: " + newTeacher.getSubject());
         System.out.println("Years Teaching: " + newTeacher.getYearsTeaching() + " year(s)");
 
-        Course mathClass = new Course(newTeacher,"Math");
+        Course mathClass = new Course(newTeacher,"Algebra 101");
         mathClass.setClassList(studentTed.getName());
         mathClass.setClassList(studentBob.getName());
 
-        System.out.println("\nTeacher Name: " + mathClass.getTeacherName().getName());
+        System.out.println("\nCourse Instructor: " + mathClass.getTeacherName().getName());
         System.out.println("Course Subject: " + mathClass.getSubject());
         System.out.println("Class List: " + mathClass.getClassList());
 
