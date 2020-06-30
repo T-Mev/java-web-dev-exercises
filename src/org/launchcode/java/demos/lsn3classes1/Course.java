@@ -2,6 +2,7 @@ package org.launchcode.java.demos.lsn3classes1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class  Course {
     private Teacher teacherName;
@@ -35,5 +36,27 @@ public class  Course {
 
     public void setClassList(String student) {
         classList.add(student);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Course course = (Course) o;
+        return teacherName.equals(course.teacherName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(teacherName);
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "teacherName=" + teacherName +
+                ", subject='" + subject + '\'' +
+                ", classList=" + classList +
+                '}';
     }
 }

@@ -5,23 +5,27 @@ import java.util.ArrayList;
 public class SchoolPractice {
     public static void main(String[] args) {
         // Instantiate your Student class for part 2 here!
+
         Student studentTed = new Student("Ted", 121121);
-        studentTed.setNumberOfCredits(1);
-        studentTed.setGpa(4.0);
+        studentTed.addGrade(3,4.0);
+        studentTed.addGrade(4,3.0);
 
         Student studentBob = new Student("Bob", 123456);
-        studentBob.setNumberOfCredits(3);
-        studentBob.setGpa(3.0);
+        studentBob.addGrade(3,4.0);
+        studentBob.addGrade(4,3.0);
+        studentBob.addGrade(4,2.0);
 
         System.out.println("\nStudent Name: " + studentTed.getName());
         System.out.println("Student ID: " + studentTed.getStudentId());
         System.out.println("Number of credits: " + studentTed.getNumberOfCredits());
         System.out.println("GPA: " + studentTed.getGpa());
+        System.out.println("Grade Level: " + studentTed.getGradeLevel());
 
         System.out.println("\nStudent Name: " + studentBob.getName());
         System.out.println("Student ID: " + studentBob.getStudentId());
         System.out.println("Number of credits: " + studentBob.getNumberOfCredits());
         System.out.println("GPA: " + studentBob.getGpa());
+        System.out.println("Grade Level: " + studentBob.getGradeLevel());
 
         Teacher newTeacher = new Teacher("Mr. Teacher", "Math", 7);
 
