@@ -15,10 +15,21 @@ public class HouseCat extends Cat {
 
     @Override
     public String noise() {
-        return "Hello, my name is " + name + "!";
+        if (isSatisfied()) {
+            return "Hello, my name is " + name + "!";
+        } else {
+            return super.noise(); // prints "Meeeeeeooooowww!"
+        }
     }
 
     public String purr() {
         return "I'm a HouseCat";
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + '\n' +
+                "Species: "  + species + '\n' +
+                "Weight: "  + getWeight() + '\n';
     }
 }
